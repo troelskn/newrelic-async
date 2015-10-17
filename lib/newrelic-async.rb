@@ -92,7 +92,6 @@ module NewRelic
     end # module Instrumentation
 
     class Transaction
-
       # End async request cycle
       def self.stop_async(env, response=nil)
         state = NewRelic::Agent::TransactionState.tl_get
@@ -116,6 +115,7 @@ module NewRelic
       end
     end # module MethodTracer
 
+    # We override these in order to allow passing in start_time instead of relying on a block to time the call
     module MethodTracerHelpers
       def trace_execution_scoped(metric_names, options={}) #THREAD_LOCAL_ACCESS
         state = NewRelic::Agent::TransactionState.tl_get
