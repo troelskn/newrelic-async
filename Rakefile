@@ -17,11 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "newrelic-async"
   gem.homepage = "http://github.com/troelskn/newrelic-async"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "newrelic-async is will monkeypatch newrelic-agent to make it work in an aync context"
   gem.email = "troelskn@gmail.com"
   gem.authors = ["Troels Knak-Nielsen"]
   # dependencies defined in Gemfile
+  gem.add_dependency 'newrelic_rpm', '>= 3.10.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
