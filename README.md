@@ -1,7 +1,7 @@
 newrelic-async
 ===
 
-A set of patches for `newrelic_rpm` that makes it work with async code. See [blog-post](http://troelskn.com/how-i-got-new-relic-working-with-thin-async/) for an explanation.
+A set of patches for `newrelic_rpm` that makes it work with async code. See [blog-post](http://troelskn.com/posts/how-i-got-new-relic-working-with-thin-async/) for an explanation.
 
 Simple example, using [thin_async](https://github.com/macournoyer/thin_async):
 
